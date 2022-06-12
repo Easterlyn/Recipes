@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "planks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_propagule"
+    }
+  },
+  "result": {
+    "item": "minecraft:mangrove_planks"
+  }
+}
