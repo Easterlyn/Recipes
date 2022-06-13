@@ -1,0 +1,35 @@
+name: Build Resource Pack
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pretty:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Run Prettier
+        uses: creyD/prettier_action@v4.2
+        with:
+          dry: true
+          # print-width of 1 to ensure that all entries are on a new line.
+          prettier_options: --check --print-width 1 **/*.{json,mcmeta}
+
+  build:
+    needs: pretty
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: easterlyn-recipes
+          path: |
+            data/
+            pack.mcmeta

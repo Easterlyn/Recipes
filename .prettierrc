@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": "*.mcmeta",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
