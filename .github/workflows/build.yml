@@ -1,7 +1,8 @@
 name: Build Resource Pack
 
 on:
-  # For initial setup, only workflow_dispatch. Later will be push and pull_request.
+  push:
+  pull_request:
   workflow_dispatch:
 
 jobs:
