@@ -3,7 +3,7 @@
   "group": "stick",
   "ingredients": [
     {
-      "tag": "minecraft:mangrove_roots"
+      "item": "minecraft:mangrove_roots"
     }
   ],
   "result": {
