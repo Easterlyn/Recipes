@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#O#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "O": {
+      "item": "minecraft:lantern"
+    }
+  },
+  "result": {
+    "item": "minecraft:light"
+  }
+}
